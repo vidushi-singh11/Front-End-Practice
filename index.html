@@ -1,0 +1,49 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimal Animation</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #222;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .animated-box {
+            width: 100px;
+            height: 100px;
+            background-color: #00bcd4;
+            border-radius: 10px;
+            animation: bounceColor 3s infinite alternate;
+            transform-origin: center bottom;
+        }
+
+        @keyframes bounceColor {
+            0% {
+                transform: translateY(0) scale(1);
+                background-color: #00bcd4;
+            }
+            50% {
+                transform: translateY(-50px) scale(1.1);
+                background-color: #ff5722;
+                box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+            }
+            100% {
+                transform: translateY(0) scale(1);
+                background-color: #00bcd4;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="animated-box"></div>
+</body>
+</html>
+```
