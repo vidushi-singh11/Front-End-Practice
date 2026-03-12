@@ -1,0 +1,45 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Animation</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #282c34;
+            overflow: hidden;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #61dafb;
+            border-radius: 10px;
+            animation: moveAndRotate 3s infinite alternate ease-in-out;
+            position: relative;
+        }
+
+        @keyframes moveAndRotate {
+            0% {
+                transform: translateX(-150px) rotate(0deg);
+                background-color: #61dafb;
+            }
+            50% {
+                transform: translateX(0px) rotate(180deg);
+                background-color: #ff5722;
+            }
+            100% {
+                transform: translateX(150px) rotate(360deg);
+                background-color: #4caf50;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
+```
