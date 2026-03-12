@@ -1,0 +1,45 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #1a1a1a;
+    overflow: hidden; /* Prevent scrollbars if elements move out */
+  }
+
+  .animated-box {
+    width: 80px;
+    height: 80px;
+    background-color: #ff6b6b;
+    border-radius: 10px;
+    animation: bounceAndRotate 3s infinite ease-in-out alternate;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  @keyframes bounceAndRotate {
+    0% {
+      transform: translateY(0) rotate(0deg) scale(1);
+      background-color: #ff6b6b;
+    }
+    50% {
+      transform: translateY(-50px) rotate(180deg) scale(1.1);
+      background-color: #4ecdc4;
+    }
+    100% {
+      transform: translateY(0) rotate(360deg) scale(1);
+      background-color: #ff6b6b;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="animated-box"></div>
+</body>
+</html>
+```
