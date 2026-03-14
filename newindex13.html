@@ -1,0 +1,44 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Simple CSS Animation</title>
+<style>
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #ff6347; /* Tomato */
+  border-radius: 10px;
+  animation-name: bounce;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="box"></div>
+
+</body>
+</html>
+```
