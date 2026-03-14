@@ -1,0 +1,30 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .animated-box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            animation: slideAndColorChange 3s infinite alternate;
+        }
+
+        @keyframes slideAndColorChange {
+            from {
+                transform: translateX(0);
+                background-color: red;
+            }
+            to {
+                transform: translateX(200px);
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="animated-box"></div>
+</body>
+</html>
+```
