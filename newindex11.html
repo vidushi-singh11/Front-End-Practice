@@ -1,0 +1,50 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Simple Animation</title>
+<style>
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    overflow: hidden;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 10px;
+    animation: simpleBoxAnimation 3s infinite alternate ease-in-out;
+}
+
+@keyframes simpleBoxAnimation {
+    0% {
+        background-color: red;
+        transform: translateX(-150px) scale(1);
+        border-radius: 10px;
+    }
+    50% {
+        background-color: blue;
+        transform: translateX(0) scale(1.2) rotate(180deg);
+        border-radius: 50%;
+    }
+    100% {
+        background-color: green;
+        transform: translateX(150px) scale(1);
+        border-radius: 10px;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="box"></div>
+
+</body>
+</html>
+```
