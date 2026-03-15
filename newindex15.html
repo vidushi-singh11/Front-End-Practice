@@ -1,0 +1,48 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Simple CSS Animation</title>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    border-radius: 10px;
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+      background-color: #3498db;
+    }
+    50% {
+      transform: translateY(-50px);
+      background-color: #e74c3c;
+    }
+    100% {
+      transform: translateY(0);
+      background-color: #3498db;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>
+```
