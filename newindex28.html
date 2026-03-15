@@ -1,0 +1,47 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #007bff;
+  position: relative;
+  animation: moveAndColor 3s infinite alternate ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes moveAndColor {
+  0% {
+    transform: translateX(0) rotate(0deg);
+    background-color: #007bff;
+  }
+  50% {
+    transform: translateX(150px) rotate(180deg);
+    background-color: #ff4500;
+  }
+  100% {
+    transform: translateX(0) rotate(360deg);
+    background-color: #007bff;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="box"></div>
+
+</body>
+</html>
+```
