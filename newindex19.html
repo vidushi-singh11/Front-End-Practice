@@ -1,0 +1,42 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Simple Animation</title>
+<style>
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: dodgerblue;
+    border-radius: 10px;
+    animation: simplePulse 2s infinite alternate ease-in-out;
+}
+
+@keyframes simplePulse {
+    0% {
+        transform: scale(1);
+        background-color: dodgerblue;
+    }
+    100% {
+        transform: scale(1.2);
+        background-color: #ff6347; /* Tomato */
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="box"></div>
+
+</body>
+</html>
+```
