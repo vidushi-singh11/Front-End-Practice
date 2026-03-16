@@ -1,0 +1,43 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Simple Animation</title>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation: moveAndColor 3s infinite alternate;
+  }
+
+  @keyframes moveAndColor {
+    0% {
+      background-color: red;
+      transform: translateX(0) scale(1);
+    }
+    50% {
+      background-color: blue;
+      transform: translateX(100px) scale(1.2);
+    }
+    100% {
+      background-color: green;
+      transform: translateX(0) scale(1);
+    }
+  }
+</style>
+</head>
+<body>
+<div class="box"></div>
+</body>
+</html>
+```
