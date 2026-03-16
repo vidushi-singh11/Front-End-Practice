@@ -1,0 +1,33 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    margin: 50px;
+    border-radius: 10px;
+    animation: slideBox 2s infinite alternate ease-in-out;
+}
+
+@keyframes slideBox {
+    0% {
+        transform: translateX(0);
+        background-color: #3498db;
+    }
+    100% {
+        transform: translateX(200px);
+        background-color: #e74c3c;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="box"></div>
+
+</body>
+</html>
+```
