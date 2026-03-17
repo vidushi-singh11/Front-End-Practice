@@ -1,0 +1,42 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation: simpleMove 3s infinite alternate;
+  }
+
+  @keyframes simpleMove {
+    0% {
+      background-color: red;
+      transform: translateX(0);
+    }
+    50% {
+      background-color: blue;
+      transform: translateX(150px);
+    }
+    100% {
+      background-color: red;
+      transform: translateX(0);
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>
+```
