@@ -1,0 +1,46 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Simple Animation</title>
+<style>
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: dodgerblue;
+  position: relative;
+  animation: moveAndColor 3s infinite alternate;
+}
+
+@keyframes moveAndColor {
+  0% {
+    transform: translateX(-150px) rotate(0deg);
+    background-color: dodgerblue;
+  }
+  50% {
+    transform: translateX(150px) rotate(180deg);
+    background-color: tomato;
+  }
+  100% {
+    transform: translateX(-150px) rotate(360deg);
+    background-color: dodgerblue;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="box"></div>
+
+</body>
+</html>
+```
