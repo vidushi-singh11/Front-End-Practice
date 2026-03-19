@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Simple Animation</title>
+<style>
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #ff6347; /* Tomato */
+  border-radius: 10px;
+  animation: animateBox 3s infinite alternate ease-in-out;
+}
+
+@keyframes animateBox {
+  0% {
+    background-color: #ff6347; /* Tomato */
+    transform: translateX(-150px) rotate(0deg);
+  }
+  50% {
+    background-color: #3cb371; /* Medium Sea Green */
+    transform: translateX(0px) rotate(180deg) scale(1.2);
+  }
+  100% {
+    background-color: #4169e1; /* Royal Blue */
+    transform: translateX(150px) rotate(360deg);
+  }
+}
+</style>
+</head>
+<body>
+<div class="box"></div>
+</body>
+</html>
