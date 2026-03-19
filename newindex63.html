@@ -1,0 +1,39 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Simple Animation</title>
+<style>
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+  overflow: hidden; /* Prevent scrollbar if body is taller than viewport */
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: dodgerblue;
+  border-radius: 10px;
+  animation: bounce 1.5s infinite alternate ease-in-out;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50px);
+  }
+}
+</style>
+</head>
+<body>
+<div class="box"></div>
+</body>
+</html>
+```
