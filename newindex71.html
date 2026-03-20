@@ -1,0 +1,27 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Simple Animation</title>
+<style>
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: dodgerblue;
+  margin-top: 50px; /* To make it visible from top */
+  animation: slide 3s infinite alternate ease-in-out;
+}
+
+@keyframes slide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(200px); }
+}
+</style>
+</head>
+<body>
+
+<div class="box"></div>
+
+</body>
+</html>
+```
