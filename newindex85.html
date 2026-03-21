@@ -1,0 +1,51 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Simple Animation</title>
+<style>
+body {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #ff6347; /* Tomato */
+  border-radius: 10px;
+  animation-name: simple-animation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes simple-animation {
+  0% {
+    transform: translateX(0) rotate(0deg) scale(1);
+    background-color: #ff6347; /* Tomato */
+  }
+  50% {
+    transform: translateX(150px) rotate(180deg) scale(1.2);
+    background-color: #4682b4; /* SteelBlue */
+  }
+  100% {
+    transform: translateX(0) rotate(360deg) scale(1);
+    background-color: #ff6347; /* Tomato */
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="box"></div>
+
+</body>
+</html>
+```
