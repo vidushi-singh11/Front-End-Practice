@@ -1,0 +1,33 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Simple Animation</title>
+<style>
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation: slideAndColor 3s infinite alternate;
+  }
+
+  @keyframes slideAndColor {
+    0% {
+      background-color: red;
+      left: 0px;
+    }
+    100% {
+      background-color: blue;
+      left: 200px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="box"></div>
+
+</body>
+</html>
+```
