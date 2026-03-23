@@ -1,0 +1,46 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #ff6347; /* Tomato */
+  position: relative;
+  animation: simpleBounce 2s infinite alternate ease-in-out;
+}
+
+@keyframes simpleBounce {
+  0% {
+    transform: translateY(0) scale(1);
+    background-color: #ff6347;
+  }
+  50% {
+    transform: translateY(-50px) scale(1.1);
+    background-color: #4682b4; /* SteelBlue */
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    background-color: #ff6347;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="box"></div>
+
+</body>
+</html>
+```
