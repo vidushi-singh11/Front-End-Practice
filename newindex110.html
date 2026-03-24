@@ -1,0 +1,46 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Simple Animation</title>
+<style>
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #007bff;
+  border-radius: 10px;
+  animation: bounce 2s infinite alternate ease-in-out;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+    background-color: #007bff;
+  }
+  50% {
+    transform: translateY(-50px);
+    background-color: #28a745;
+  }
+  100% {
+    transform: translateY(0);
+    background-color: #007bff;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="box"></div>
+
+</body>
+</html>
+```
