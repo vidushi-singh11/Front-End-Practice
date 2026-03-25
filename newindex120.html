@@ -1,0 +1,44 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Simple Animation</title>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+
+  .animated-box {
+    width: 100px;
+    height: 100px;
+    background-color: #ff6347; /* Tomato */
+    border-radius: 10px;
+    animation: bounce 2s infinite alternate;
+  }
+
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+      background-color: #ff6347;
+    }
+    50% {
+      transform: translateY(-50px);
+      background-color: #4682b4; /* SteelBlue */
+    }
+    100% {
+      transform: translateY(0);
+      background-color: #ff6347;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="animated-box"></div>
+</body>
+</html>
+```
