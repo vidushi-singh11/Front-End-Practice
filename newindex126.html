@@ -1,0 +1,37 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Simple Animation</title>
+<style>
+  .animated-box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin-top: 50px;
+    animation: slideAndColor 3s infinite alternate;
+  }
+
+  @keyframes slideAndColor {
+    0% {
+      background-color: red;
+      transform: translateX(0);
+    }
+    50% {
+      background-color: blue;
+      transform: translateX(200px);
+    }
+    100% {
+      background-color: green;
+      transform: translateX(0);
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="animated-box"></div>
+
+</body>
+</html>
+```
