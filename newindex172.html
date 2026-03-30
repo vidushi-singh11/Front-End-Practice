@@ -1,0 +1,49 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Simple Animation</title>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+
+  .animated-box {
+    width: 100px;
+    height: 100px;
+    background-color: dodgerblue;
+    position: relative;
+    animation: slideBox 3s infinite alternate ease-in-out;
+  }
+
+  @keyframes slideBox {
+    0% {
+      left: -150px;
+      background-color: dodgerblue;
+      transform: rotate(0deg);
+    }
+    50% {
+      left: 150px;
+      background-color: tomato;
+      transform: rotate(180deg);
+    }
+    100% {
+      left: -150px;
+      background-color: dodgerblue;
+      transform: rotate(360deg);
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="animated-box"></div>
+
+</body>
+</html>
+```
