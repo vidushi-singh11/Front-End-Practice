@@ -1,0 +1,35 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Simple Animation</title>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: dodgerblue;
+    animation: colorChange 2s infinite alternate;
+  }
+
+  @keyframes colorChange {
+    0% { background-color: dodgerblue; transform: translateX(0); }
+    100% { background-color: tomato; transform: translateX(100px); }
+  }
+</style>
+</head>
+<body>
+
+<div class="box"></div>
+
+</body>
+</html>
+```
