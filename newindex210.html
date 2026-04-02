@@ -1,0 +1,42 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Simple Animation</title>
+<style>
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #3498db;
+  border-radius: 10px;
+  animation: simpleAnimation 2s infinite alternate;
+}
+
+@keyframes simpleAnimation {
+  0% {
+    transform: translateX(0) scale(1);
+    background-color: #3498db;
+  }
+  100% {
+    transform: translateX(50px) scale(1.2);
+    background-color: #e74c3c;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="box"></div>
+
+</body>
+</html>
+```
