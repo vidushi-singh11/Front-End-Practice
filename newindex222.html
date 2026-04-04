@@ -1,0 +1,32 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Animation</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            animation-name: slideAndColor;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            border-radius: 10px;
+        }
+
+        @keyframes slideAndColor {
+            0%   { left: 0px; top: 0px; background-color: red; }
+            25%  { left: 200px; top: 0px; background-color: blue; }
+            50%  { left: 200px; top: 200px; background-color: green; }
+            75%  { left: 0px; top: 200px; background-color: purple; }
+            100% { left: 0px; top: 0px; background-color: red; }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
+```
