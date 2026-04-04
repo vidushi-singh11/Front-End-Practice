@@ -1,0 +1,39 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Animation</title>
+    <style>
+        .animated-box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin: 50px;
+            position: relative;
+            animation: slideAndColor 3s infinite alternate ease-in-out;
+        }
+
+        @keyframes slideAndColor {
+            0% {
+                left: 0;
+                background-color: red;
+                transform: rotate(0deg);
+            }
+            50% {
+                left: 200px;
+                background-color: blue;
+                transform: rotate(180deg);
+            }
+            100% {
+                left: 0;
+                background-color: red;
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="animated-box"></div>
+</body>
+</html>
+```
