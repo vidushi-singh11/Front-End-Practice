@@ -1,0 +1,48 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Simple Animation</title>
+<style>
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+  overflow: hidden;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: dodgerblue;
+  border-radius: 10px;
+  animation: bounce 2s infinite alternate ease-in-out;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0) scale(1);
+    background-color: dodgerblue;
+  }
+  50% {
+    transform: translateY(-50px) scale(1.1);
+    background-color: #ff6347; /* Tomato */
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    background-color: dodgerblue;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="box"></div>
+
+</body>
+</html>
+```
