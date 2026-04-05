@@ -1,0 +1,45 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: dodgerblue;
+    border-radius: 10px;
+    animation: slideAndColor 3s infinite alternate;
+}
+
+@keyframes slideAndColor {
+    0% {
+        transform: translateX(-100px) scale(1);
+        background-color: dodgerblue;
+    }
+    50% {
+        transform: translateX(100px) scale(1.2);
+        background-color: tomato;
+    }
+    100% {
+        transform: translateX(-100px) scale(1);
+        background-color: dodgerblue;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="box"></div>
+
+</body>
+</html>
+```
