@@ -1,0 +1,37 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Simple Animation</title>
+<style>
+  .animated-box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 50px;
+    animation: simpleMove 3s infinite alternate;
+  }
+
+  @keyframes simpleMove {
+    0% {
+      transform: translateX(0);
+      background-color: red;
+    }
+    50% {
+      transform: translateX(200px);
+      background-color: blue;
+    }
+    100% {
+      transform: translateX(0);
+      background-color: red;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="animated-box"></div>
+
+</body>
+</html>
+```
