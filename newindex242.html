@@ -1,0 +1,28 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Simple Animation</title>
+<style>
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation: moveBox 2s infinite alternate;
+}
+
+@keyframes moveBox {
+  0% { left: 0px; background-color: red; }
+  50% { left: 200px; background-color: blue; }
+  100% { left: 0px; background-color: red; }
+}
+</style>
+</head>
+<body>
+
+<div class="box"></div>
+
+</body>
+</html>
+```
