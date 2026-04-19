@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: sans-serif;
+}
+
+.card {
+    width: 200px;
+    height: 150px;
+    background-color: #28a745;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.05) rotate(2deg);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    background-color: #218838;
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+  Hover Me!
+</div>
+
+</body>
+</html>
