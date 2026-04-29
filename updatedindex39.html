@@ -1,0 +1,51 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Animation</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: sans-serif;
+            overflow: hidden;
+        }
+
+        .card {
+            width: 200px;
+            height: 120px;
+            background-color: #3498db;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5em;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+            cursor: pointer;
+            text-align: center;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .card:hover {
+            transform: translateY(-10px) rotate(3deg) scale(1.05);
+            background-color: #e74c3c;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        Hover Me!
+    </div>
+</body>
+</html>
+```
