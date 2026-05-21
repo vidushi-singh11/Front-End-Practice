@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f2f5;
+  }
+
+  .card {
+    width: 300px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+
+  .card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .card h2 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  .card p {
+    color: #666;
+    font-size: 0.9em;
+  }
+</style>
+</head>
+<body>
+
+<div class="card">
+  <h2>Hover Me</h2>
+  <p>See a subtle lift and shadow effect!</p>
+</div>
+
+</body>
+</html>
